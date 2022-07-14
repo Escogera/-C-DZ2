@@ -4,17 +4,16 @@
 
 78 -> третьей цифры нет
 
-32679 -> 6*/
-
+32679 -> 6
+*/
 
 Console.WriteLine("Введите число");
-int[] numbers = new int [2];
-int size = numbers.Length;
-if(numbers.Length<3)
+string number = Console.ReadLine();
+if(number.Length<3)
 {
-    Console.WriteLine("третий цифры нет");
+    Console.Write(number+" -> третий цифры нет");
 }
 else
 {
-    Console.WriteLine(numbers[2]);
+    Console.Write(number+" -> "+number[2]);
 }
