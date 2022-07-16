@@ -6,5 +6,8 @@
 
 Console.WriteLine("Введите трехзначное число");
 string number = Console.ReadLine();
-Console.Write(number+" -> "+number[1]);
-
+void SecondNumber(string x)
+{
+    Console.Write(x + " -> " + x[1]);
+}
+SecondNumber(number);

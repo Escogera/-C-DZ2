@@ -9,11 +9,15 @@
 
 Console.WriteLine("Введите число");
 string number = Console.ReadLine();
-if(number.Length<3)
+void ThirdNumber(string x)
 {
-    Console.Write(number+" -> третий цифры нет");
+    if(x.Length<3)
+    {
+        Console.Write(x+" -> третий цифры нет");
+    }
+    else
+    {   
+        Console.Write(x+" -> "+x[2]);
+    }
 }
-else
-{
-    Console.Write(number+" -> "+number[2]);
-}
+ThirdNumber(number);

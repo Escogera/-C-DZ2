@@ -5,16 +5,20 @@
 1 -> нет*/
 
 Console.WriteLine("Введите число соответствующее дню недели");
-int number = Convert.ToInt32(Console.ReadLine());
-if(0<number&&number<6)
+int xx = Convert.ToInt32(Console.ReadLine());
+void Weekend(int number)
 {
-    Console.WriteLine(number+" -> нет");
-}
-else if (5<number&&number<8)
-{
-    Console.WriteLine(number+" -> да");
-}
-else
-{
+    if(0<number&&number<6)
+    {
+        Console.WriteLine(number+" -> нет");
+    }
+    else if (5<number&&number<8)
+    {
+        Console.WriteLine(number+" -> да");
+    }
+    else
+    {
     Console.WriteLine("введите число от 1 до 7");
+    }
 }
+Weekend(xx);
